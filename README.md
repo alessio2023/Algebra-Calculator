@@ -122,3 +122,23 @@ The code begins by defining the equation to be solved. This involves defining th
         disp(['   Function: ', char(funcSym)]);
         disp('2. Plot the function.');
     catch ME
+
+**If in any step there seems to be a problem or the program cannot continue due to a malfunction on the equation asked, then in each part of the code regarding each type of algebraic equation, an error message would be triggered:**
+
+       disp('Unsupported problem type. Please enter a valid algebraic problem.');
+
+       disp(['Error: ', ME.message]);
+
+       disp(['Error while solving the equation: ', ME.message]);
+
+       disp(['Solving the system of equations: ', equation]);
+
+        disp(['Error while solving the system of equations: ', ME.message]);
+
+         if isempty(plotIdx)
+            error('The command must contain the word "plot".');
+
+             catch ME
+        disp(['Error while plotting the function: ', ME.message]);
+
+**Well that would be it, this README file contains a clear explanation of each part of the code explaining how and why it works how it works. As a group we would like to thank you Mr, since throughout your classes, you have integrated a sense of understanding of coding and programming into us that we didn't have before. We will continue to implement this code since we found it incredibly helpfull for the future and would like to implement it to a point of even becoming a long term proyect or even a capstone idea for senior year. All the best to you and if in the future we get accepted into Brown once again, we would like to meet again to expand our knowledge once again. Thanks!**
